@@ -29,14 +29,8 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         launch();
-
-        //prompt show an empty to do list (first launch app, create a new one)
-        //if the user wants to load, search  for to do list in files
-        //if user wants to edit, search for item or list, and allow to re-enter the description or name
-        //if user wants to delete List, the list class will have instructions on deleting, which will delete
-            //all items in the list and the list
-
-        //to sort by date, use a sorting algorithm
+        //automatically call create, which makes a new list. after that, the buttons
+            //pressed depends on next action program will take
     }
 
     public static void create()
