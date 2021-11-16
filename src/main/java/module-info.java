@@ -1,4 +1,4 @@
-module ucf.assignments.ramlogancop3330assignment4 {
+module ucf.assignments.ramlogancop3330assignment {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;

@@ -5,12 +5,29 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ucf.assignments.ramlogancop3330assignment4.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<?import javafx.scene.chart.BarChart?>
+<GridPane alignment="TOP_CENTER"  hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ucf.assignments.ramlogancop3330assignment4.HelloController" gridLinesVisible="true">
+
+    <padding><Insets top="1" right="1" bottom="1" left="25"/></padding>
+
+    <HBox spacing="10" alignment="TOP_CENTER"
+          GridPane.columnIndex="1" GridPane.rowIndex="0">
+       <Button
+           text = "Add"
+            onAction="#onAddButtonClick"/>
+        <Button
+            text = "Delete"
+            onAction="#onDeleteButtonClick"/>
+        <Button
+            text="Edit"
+            onAction="#onEditButtonClick"/>
+    </HBox>
+
+
+</GridPane>
+
+
