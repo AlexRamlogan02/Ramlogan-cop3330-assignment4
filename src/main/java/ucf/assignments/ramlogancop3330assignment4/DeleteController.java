@@ -17,28 +17,6 @@ public class DeleteController {
     @FXML
     protected void lButton() {
         System.out.println("Delete List!!!");
-        Stage stage = new Stage();
-
-        GridPane grid = new GridPane();
-        grid.setAlignment(Pos.CENTER);
-        grid.setHgap(10);
-        grid.setVgap(10);
-        grid.setPadding(new Insets(25, 25, 25, 25));
-
-        Scene scene = new Scene(grid, 300, 275); //creates the scene
-
-        javafx.scene.text.Text sceneTitle = new Text("The Result is deleting the List");
-        sceneTitle.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
-
-        //add text to grid
-        grid.add(sceneTitle,0,0,2,1);
-
-        stage.setTitle("Result...");
-        stage.setScene(grid.getScene());
-        stage.show();
-
-        stage.close();
-
     }
 
     @FXML

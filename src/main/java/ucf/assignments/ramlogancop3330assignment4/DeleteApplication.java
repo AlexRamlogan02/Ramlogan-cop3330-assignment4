@@ -15,8 +15,7 @@ public class DeleteApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 240, 240);
         stage.setTitle("To Do List");
         stage.setScene(scene);
-        stage.show();
-        stage.close();
+        stage.showAndWait();
     }
 
     public static void main(String[] args) {

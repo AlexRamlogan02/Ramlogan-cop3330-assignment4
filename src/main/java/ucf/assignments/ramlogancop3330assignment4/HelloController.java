@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
@@ -27,6 +28,7 @@ public class HelloController {
         tempStage.setScene(scene);
         tempStage.show();
 
+
         return null;
     }
 
@@ -37,12 +39,18 @@ public class HelloController {
 
         FXMLLoader fxmlLoader = new FXMLLoader(ucf.assignments.ramlogancop3330assignment4.
                 HelloApplication.class.getResource("DeleteWindow.fxml"));
-
+/*
         Scene scene = new Scene(fxmlLoader.load(), 200, 240);
         Stage tempStage = new Stage();
         tempStage.setTitle("Select Option");
         tempStage.setScene(scene);
         tempStage.show();
+*/
+        Stage newStage = new Stage();
+        newStage.setScene(new Scene(fxmlLoader.load()));
+        newStage.showAndWait();
+        newStage.close();
+
         return null;
     }
     @FXML
